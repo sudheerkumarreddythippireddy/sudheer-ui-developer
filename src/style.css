@@ -24,7 +24,7 @@
 }
 .description {
     font-size: 40px;
-    color: aquamarine;
+    color: indianred;
 }
 .button {
     height: 50px;
@@ -120,4 +120,36 @@ a{
     margin-top:30px;
     text-align:center;
     font-style: italic;
+}
+.contact-container{
+    background-color:#0d2436;
+}
+.footer-section-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 40px
+}
+
+.footer-section-copyright-container {
+    text-align: center;
+    color: #ffffff;
+    background-color: #001c32;
+    padding: 10px;
+}
+
+.footer-section-sub-heading {
+    color: #cced00;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-section-text {
+    color: #9aa5b1;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+.icon{
+    color:#5a7184;
+    font-size:20px
 }
