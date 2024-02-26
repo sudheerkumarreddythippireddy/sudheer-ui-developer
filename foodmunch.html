@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://kit.fontawesome.com/a3e4750b5b.js" crossorigin="anonymous"></script>
+    <style>
+        .food-munch-logo{
+            height:70px;
+            width:70px;
+        }
+        .banner-bg-container{
+            background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png");
+            background-size:cover;
+            height:90vh;
+        }
+        .main-title{
+            color:white;
+            font-size:45px;
+        }
+        .caption{
+            color:white;
+            font-size:25px;
+        }
+        .view-menu-btn{
+            color:white;
+            background-color:gold;
+            height:40px;
+            width:140px;
+            border-radius:8px;
+            padding:5px;
+            font-weight:bold;
+            margin-right:10px;
+        }
+        .order-btn{
+            background-color:transparent;
+            border-color:gold;
+            color:gold;
+            padding:5px;
+            height:40px;
+            width:140px;
+            border-radius:8px;
+        }
+        .wcu-container{
+            background-color:#f9fbfe;
+        }
+        .wcu-heading{
+            font-size:30px;
+            color: #183b56;
+            font-weight:500px;
+        }
+        .wcu-description{
+            font-size:17px;
+            color:#5a7184;
+        }
+        .wcu-card{
+            background-color:white;
+            text-align:center;
+            border-color:#e5eaf4;
+            border-width:1px;
+            border-style:solid;
+            border-radius:15px;
+        }
+        .wcu-card-image{
+            height:90px;
+            width:90px;
+        }
+        .wcu-card-title{
+            color:#183b56;
+            font-size:28px;
+        }
+        .wcu-card-description{
+            color:#5a7184;
+            font-size:17px;
+        }
+        .offers{
+            color:black;
+            font-weight:bold;
+        }
+        .em-card{
+            background-color:white;
+            border-radius:15px;
+        }
+        .menu-item-image{
+            margin-bottom:10px;
+            border-radius:15px;
+        }
+        .menu-item-heading{
+            font-size:18px;
+            color:black;
+        }
+        .menu-item-link{
+            text-decoration: none;
+            color:goldenrod;
+            font-size:14px;
+        }
+        .healthy-container{
+            background-color:white;
+        }
+        .healthy-heading{
+            color:black;
+            font-size:30px;
+        }
+        .healthy-description{
+            color:#5a7184;
+            font-size:17px;
+        }
+        .healthy-img{
+            width:290px;
+        }
+        .healthy-button{
+            color:white;
+            background-color:goldenrod;
+            width:150px;
+            height:40px;
+            border-radius:10px;
+            border-color:goldenrod;
+            border-width:1px;
+            border-style:solid;
+        }
+        .payment-container{
+            background-color:white;
+        }
+        .payment-img{
+            width:290px;
+        }
+        .payment-heading{
+            color:black;
+            font-size:30px;
+        }
+        .payment-description{
+            color:#5a7184;
+            font-size:17px;
+        }
+        .payment-button{
+            color:white;
+            background-color:goldenrod;
+            width:150px;
+            height:40px;
+            border-radius:10px;
+            border-color:goldenrod;
+            border-width:1px;
+            border-style:solid;
+        }
+        .payment-card-img{
+            width:50px;
+            height:50px;
+            margin-right:25px;
+        }
+        .thanking-button{
+            color:white;
+            background-color:goldenrod;
+            width:150px;
+            height:40px;
+            border-radius:10px;
+            border-color:goldenrod;
+            border-width:1px;
+            border-style:solid;
+        }
+        .thanking-container{
+            background-image:radial-gradient(red,pink);
+        }
+        .thanking-heading{
+            font-size:30px;
+            color:black;
+        }
+        .thanking-caption{
+            font-size:17px;
+            color:#5a7184;
+        }
+        .thanking-img{
+            width:270px;
+            margin-bottom:20px;
+        }
+        .follow-icon-container{
+            width:80px;
+            height:80px;
+            background-color:#faf7e8;
+            margin:10px;
+            padding-top:23px;
+            border-radius:40px;
+        }
+        .footer-section{
+            background-color:#0d2436;
+        }
+        .footer-section-mail-id{
+            color:#959ead;
+            font-size:16px;
+            font-weight:bold;
+            margin-top:20px;
+        }
+        .footer-section-address{
+            color:#959ead;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container">
+            <a class="nav-brand" href="#">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="food-munch-logo"/>
+            </a>
+            <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="menu" class="collapse navbar-collapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#wcu" class="nav-link">Why choose us?</a>
+                    <a href="#em" class="nav-link">Exlpore menu</a>
+                    <a href="#pc" class="nav-link">Delivery & payment</a>
+                    <a href="#fc" class="nav-link">Follow us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-bg-container d-flex flex-column justify-content-center text-center">
+        <h1 class="main-title">Get Delicious Food Anytime</h1>
+        <p class="caption">Eat Smart & Healthy</p>
+        <div class="d-flex flex-row justify-content-center">
+            <button class="view-menu-btn">View Menu</button>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </div>
+    <div id="wcu" class="wcu-container pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="wcu-heading">Why choose us?</h1>
+                    <p class="wcu-description">We use both original recipes and classic version of famous items</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img
+                            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png"
+                            class="wcu-card-image"
+                        />
+                        <h1 class="wcu-card-title mt-3">Food Service</h1>
+                        <p class="wcu-card-description">Experience fine dining at the comfort of your home. All our orders are carefully packed and arranged to give you the nothing less than perfect.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img
+                            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/fruits-img.png"
+                            class="wcu-card-image"
+                        />
+                        <h1 class="wcu-card-title mt-3">Fresh Food</h1>
+                        <p class="wcu-card-description"> The Fresh Food group provides fresh-cut fruits and vegetables
+                            directly picked from our partner farms and farm houses so that
+                            you always get them tree to plate.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img
+                            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/offers-img.png"
+                            class="wcu-card-image"
+                        />
+                        <h1 class="wcu-card-title mt-3">Best offers</h1>
+                        <p class="wcu-card-description">Food Coupons & Offers upto
+                            <span class="offers">50% OFF</span>
+                            and Exclusive Promo Codes on All Online Food Orders.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="em" class="em-container pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="em-heading">Explore Menu</h1>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="shadow em-card mb-3 p-3">
+                        <img
+                            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+                            class="menu-item-image w-100"
+                        />
+                        <p class="menu-item-heading">Non-Veg Starters</p>
+                        <a href="#" class="menu-item-link">View All <span class="bi bi-arrow-right-short"></span></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="shadow em-card mb-3 p-3">
+                        <img
+                            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-veg-starters-img.png"
+                            class="menu-item-image w-100"
+                        />
+                        <p class="menu-item-heading">Veg Starters</p>
+                        <a href="#" class="menu-item-link">View All <span class="bi bi-arrow-right-short"></span></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="shadow em-card mb-3 p-3">
+                        <img
+                            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-soup-img.png"
+                            class="menu-item-image w-100"
+                        />
+                        <p class="menu-item-heading">Soups</p>
+                        <a href="#" class="menu-item-link">View All <span class="bi bi-arrow-right-short"></span></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="shadow em-card mb-3 p-3">
+                        <img
+                            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-grilled-seafood-img.png"
+                            class="menu-item-image w-100"
+                        />
+                        <p class="menu-item-heading">Fish & Sea Food</p>
+                        <a href="#" class="menu-item-link">View All <span class="bi bi-arrow-right-short"></span></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="shadow em-card mb-3 p-3">
+                        <img
+                            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-hyderabadi-biryani-img.png"
+                            class="menu-item-image w-100"
+                        />
+                        <p class="menu-item-heading">Main-Courses</p>
+                        <a href="#" class="menu-item-link">View All <span class="bi bi-arrow-right-short"></span></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="shadow em-card mb-3 p-3">
+                        <img
+                            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-mushroom-noodles-img.png"
+                            class="menu-item-image w-100"
+                        />
+                        <p class="menu-item-heading">Noodles</p>
+                        <a href="#" class="menu-item-link">View All <span class="bi bi-arrow-right-short"></span></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="shadow em-card mb-3 p-3">
+                        <img
+                            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-gluten-img.png"
+                            class="menu-item-image w-100"
+                        />
+                        <p class="menu-item-heading">Salads</p>
+                        <a href="#" class="menu-item-link">View All <span class="bi bi-arrow-right-short"></span></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="shadow em-card mb-3 p-3">
+                        <img
+                            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-coffee-bourbon-img.png"
+                            class="menu-item-image w-100"
+                        />
+                        <p class="menu-item-heading">Deserts</p>
+                        <a href="#" class="menu-item-link">View All <span class="bi bi-arrow-right-short"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="healthy-container pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="text-center">
+                        <img
+                            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/healthy-food-plate-img.png"
+                            class="healthy-img"
+                        />
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 pt-3">
+                    <h1 class="healthy-heading">Fresh, Healthy, Organic, Delicious Fruits</h1>
+                    <p class="healthy-description">Say no to harmful chemicals and go fully organic with our range of fresh fruits and veggies. Pamper your body and your senses with the true and unadulterated gifts from mother nature. with the true and unadulterated gifts from mother nature.</p>
+                    <button class="healthy-button">Watch Video</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pc" class="payment-container pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 order-1 order-md-2">
+                    <div class="text-center">
+                        <img
+                            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png"
+                            class="payment-img"
+                        />
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 order-2 order-md-1">
+                    <h1 class="payment-heading">Delivery and Payment</h1>
+                    <p class="payment-description">Enjoy hassle-free payment with the plenitude of payment options available for you. Get live tracking and locate your food on a live map. It's quite a sight to see your food arrive to your door. Plus, you get a 5% discount on every order every time you pay online.</p>
+                    <button class="payment-button">Order Now</button>
+                    <div class="mt-3">
+                        <img
+                          src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png"
+                          class="payment-card-img"
+                        />
+                        <img
+                          src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png"
+                          class="payment-card-img"
+                        />
+                        <img
+                          src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png"
+                          class="payment-card-img"
+                        />
+                        <img
+                          src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png"
+                          class="payment-card-img"
+                        />
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thanking-container pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                    <h1 class="thanking-heading">
+                        Thankyou for being a valuable customer to us.
+                    </h1>
+                    <p class="thanking-caption">
+                        We have a suprise gift for you
+                    </p>
+                    <div class="d-md-none">
+                        <img
+                          src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png"
+                          class="thanking-img"
+                        />
+                    </div>
+                    <div>
+                        <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="thanking-button">Redeem Gift</button>
+                        <div class="modal" id="exampleModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title">Gift Vocher</h1>
+                                        <buttton class="btn btn-close" data-bs-dismiss="modal"></buttton>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img
+                                            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/gift-voucher-img.png"
+                                            class="w-100"
+                                            />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 d-none d-md-block">
+                    <img
+                      src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png"
+                      class="thanking-img"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fc" class="follow-container text-center pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="follow-heading">Follow Us</h1>
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="follow-icon-container">
+                            <i class="fa-brands fa-x-twitter fa-spin fa-spin-reverse" style="color: #d8ad13; font-size:30px;"></i>
+                        </div>
+                        <div class="follow-icon-container">
+                            <i class="fa-brands fa-facebook fa-spin fa-spin-reverse" style="color: #d8ad13; font-size:30px;"></i>
+                        </div>
+                        <div class="follow-icon-container">
+                            <i class="fa-brands fa-instagram fa-spin fa-spin-reverse" style="color: #d8ad13; font-size:30px;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png" class="food-munch-logo" />
+                    <h1 class="footer-section-mail-id">orderfood@foodmunch.com</h1>
+                    <p class="footer-section-address">
+                        123 Ayur Vigyan Nagar, New Delhi, India.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+        

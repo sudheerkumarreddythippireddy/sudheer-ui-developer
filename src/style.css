@@ -9,29 +9,115 @@
     color:aqua;
     font-size:20px;
 }
-.section{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height:90vh;
-    text-align: center;
+.image{
+    width:230px;
+    margin-bottom:25px;
+    border-radius:250px;
+}
+.heading {
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 300;
+}
+.highlight{
+    color:aqua;
+}
+.description {
+    font-size: 40px;
+    color: aquamarine;
+}
+.button {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 10px;
+    border:1px solid aqua;
+}
+.button:hover{
+    background-color:aqua;
+    color:black;
+    transition:1s;
 }
 a{
     text-decoration: none;
+    color:aqua;
 }
-#btn{
-    margin-right:10px;
-    font-size:20px;
-    margin-top:30px;
-}
-.title{
+
+.amc-title{
     color:white;
     font-weight:600;
     font-size:60px;
 }
-.name{
-    color:aqua;
-    font-size:50px;
-    margin-top:20px;
+.about-me-container{
+    background-color:#0b2639;
+    padding:50px;
+}
+.side-heading{
+    color:rgb(214, 214, 19);
+    font-size:35px;
+}
+.amc-title{
+    font-size:35px;
+}
+.amc-description{
+    font-size:23px;
+    color:white;
+}
+.amc-image{
+    width:100%;
+    border-radius:20px;
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-left:-50px;
+}
+.skills-container{
+    background-color:#1f2933;
+    padding:30px;
+}
+.skills-side-heading{
+    color:#cced00;
+    font-size:35px;
+}
+.sc-card{
+    background-color:#323f4b;
+    border-radius:10px;
+    padding:10px;
+}
+.s-image{
+    height:80px;
+    width:80px
+}
+.sc-title{
+    color:#ffffff;
+    font-size:30px;
+    font-weight:600;
+    margin-top:10px
+}
+.projects-container{
+    background-color:black;
+
+    padding:10px;
+}
+.pc-heading{
+    color:yellow;
+    font-size:30px;
+}
+.pc-card{
+    border:1px solid #fff;
+    margin-top:10px;
+    border-radius:20px;
+    padding:10px;
+}
+.pc-image{
+    width:300px;
+    height:200px;
+}
+.pc-title{
+    color:white;
+    font-size:40px;
+    margin-top:30px;
+    text-align:center;
+    font-style: italic;
 }

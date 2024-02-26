@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive portfolio</title>
@@ -10,8 +11,7 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-        <div class="bg-container">
-            <nav class="navbar navbar-expand-lg bg-transparent navbar-dark">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark position-fixed w-100">
                 <div class="container-fluid">
                   <a class="navbar-brand text-info" href="#">Sudheer.</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -37,19 +37,118 @@
                     </ul>
                   </div>
                 </div>
-              </nav>
-          <div class="section">
-            <div>
-              <h1 class="title">Hello, I'm</h1>
-              <h1 class="title">Sudheer Kumar Reddy</h1>
-              <h2 class="name">Full Stack Developer</h2>
+  </nav>
+  <div id="home" class="bg-container d-flex flex-column justify-content-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-5 order-1 order-md-2">
+                <img src="public/images/full.jpg" class="image pb-3">
+              </div>
+              <div class="col-12 col-md-7 order-2 order-md-1 d-flex flex-column justify-content-center">
+                <h1 class="heading mb-3">Hey,I am <span class="highlight">Sudheer</span></h1>
+                <p class="description mb-3">I am Full Stack Developer</p>
+                <button class="button">Contact Me</button>
+              </div>
             </div>
-            <div class="d-flex flex-row">
-              <button id="btn" class="btn btn-outline-info"><a>Hire Me</a></button>
-              <button id="btn" class="btn btn-outline-danger"><a>Let's Talk</a></button>
-            </div>
+        </div>
+  </div>
+  <div id="about" class="about-me-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 order-1 order-md-2 d-flex flex-column justify-content-center">
+          <h1 class="side-heading mt-3">Facts:</h1>
+          <h1 class="amc-title mt-2">About me</h1>
+          <img src="public/images/full.jpg" height="250" width="200" class="d-md-none mt-3 border rounded-3">
+          <p class="mt-4 amc-description">My name is Sudheer Kumar Reddy Thippireddy,and I am currently looking for job in UI Developement.I have a Master's degree in Computer Application.People find me to be upbeat,self motivated team player with excellent communication skills.</p>
+          <p class="amc-description">I am a dedicated person with a family of four.I enjoy reading,and the knowledge and the perspective that my reading gives me have strengthened my presentation abilities.</p>
+        </div>
+        <div class="col-12 col-md-6 order-2 order-md-1 d-none d-md-block">
+          <img src="public/images/full.jpg" class="amc-image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="skills" class="skills-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="skills-side-heading">Skills:</h1>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="sc-card text-center mb-3">
+            <img src="public/images/portfolio-skills-html-img.png" class="s-image">
+            <h1 class="sc-title">HTML</h1>
           </div>
         </div>
+        <div class="col-12 col-md-4">
+          <div class="sc-card text-center mb-3">
+            <img src="public/images/portfolio-skills-css-img.png" class="s-image">
+            <h1 class="sc-title">CSS</h1>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="sc-card text-center mb-3">
+            <img src="public/images/portfolio-skills-bootstrap-img.png" class="s-image">
+            <h1 class="sc-title">BS</h1>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="sc-card text-center mb-3">
+            <img src="public/images/portfolio-skills-js-img.png" class="s-image">
+            <h1 class="sc-title">JS</h1>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="sc-card text-center mb-3">
+            <img src="public/images/react.jpg" class="s-image">
+            <h1 class="sc-title">REACT</h1>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="sc-card text-center mb-3">
+            <img src="public/images/node-logo.jpg" class="s-image">
+            <h1 class="sc-title">NJS</h1>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="sc-card text-center mb-3">
+            <img src="public/images/mongodb.jpg" class="s-image">
+            <h1 class="sc-title">MD</h1>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="sc-card text-center mb-3">
+            <img src="public/images/express-js.png" class="s-image">
+            <h1 class="sc-title">EJS</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="projects" class="projects-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="pc-heading">Projects:</h1>
+        </div>   
+        <div class="col-12 col-md-6 text-center">
+          <div class="pc-card mb-3">
+            <a href="foodmunch.html"><img src="public/images/food-munch-img.png" class="pc-image"></a>
+            <h1 class="pc-title"><a href="foodmunch.html">FoodMunch</a></h1>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 text-center">
+          <div class="pc-card mb-3">
+            <a href="vr.html"><img src="public/images/OIP.jfif" class="pc-image"></a>
+            <h1 class="pc-title"><a href="vr.html">VR</a></h1>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </div>
+  <div class="contact-container">
+    
+  </div>
     <script src="javascript/script.js"></script>
 </body>
 </html>
