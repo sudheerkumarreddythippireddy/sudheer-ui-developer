@@ -38,7 +38,7 @@
 .button:hover{
     background-color:aqua;
     color:black;
-    transition:1s;
+    transition:2s;
 }
 a{
     text-decoration: none;
